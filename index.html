@@ -1,47 +1,101 @@
 <body>
     <table>
         <tr>
-            <td style="color: darkgoldenrod;">órarend</td>
-            <td>hétfő</td>
-            <td>kedd</td>
-            <td>szerda</td>
-            <td>csütörtök</td>
-            <td>péntek</td>
+            <th class="ssz">órarend</th>
+            <th>hétfő</th>
+            <th>kedd</th>
+            <th>szerda</th>
+            <th>csütörtök</th>
+            <th>péntek</th>
         </tr>
         <tr>
-            <td> 1.</td>
+            <td class="ssz"> 1.</td>
+            <td>matek</td>
+            <td>ének</td>
+            <td rowspan="2" >tesi</td>
+            <td colspan="2">nyelvtan</td>
         </tr>
         <tr>
-            <td> 2.</td>
+            <td class="ssz"> 2.</td>
+            <td>ének</td>
+            <td rowspan="2">irodalom</td>
+            <td>töri</td>
+            <td>oszt.fő</td>
+
         </tr>
         <tr>
-            <td>3.</td>
+            <td class="ssz">3.</td>
+            <td>kémia</td>
+            <td>infó</td>
+            <td>föci</td>
+            <td>angol</td>
         </tr>
         <tr>
-            <td>4.</td>
+            <td class="ssz">4.</td>
+            <td>föci</td>
+            <td>matek</td>
+            <td>angol</td>
+            <td>biosz v. kemia</td>
+            <td>ének</td>
         </tr>
         <tr>
-            <td>5.</td>
+            <td class="ssz">5.</td>
+            <td>angol</td>
+            <td>töri</td>
+    
+            <td colspan="2">matek</td>
+            <td>fizika</td>
         </tr>
         <tr>
-            <td>6.</td>
+            <td class="ssz">6.</td>
+            <td>biosz</td>
+            <td>-</td>
+            <td>etika</td>
+            <td>fejlesztés</td>
+            <td rowspan="2">tesi</td>
         </tr>
         <tr>
-            <td>7.</td>
+            <td class="ssz">7.</td>
+            <td>-</td>
+            <td>technika</td>
+            <td>rajz</td>
+            <td>tesi</td>
         </tr>
-   
+</table>
+</body>
 <style>
     table {
         border-spacing: 6px;
+        margin: 10px auto;
     }
-    td {
+    td, th {
         box-shadow: 1px 1px 3px rgb(38, 151, 98);
         border-radius: 6px;
-        width: 100px;
-        height: 80px;
-        color: rgb(21, 100, 83);
-        text-shadow: 1px 1px 3px rgb(224, 42, 164); 
-        border: solid 1px rgb(180, 10, 110);
+        width: 120px;
+        height: 60px;
+        color: rgb(177, 83, 29);
+        text-shadow: 1px 1px 1px rgb(31, 17, 26); 
+        border: solid 2px rgb(131, 22, 85);
         text-align: center;
+        font-style: oblique;
+        background-color: wheat;
+    }
+    th {
+        background-color: darkolivegreen;
+        color: white;
+        height: 50px;
+    }
+    .t {
+        background-color: darkseagreen;
+    }
+    body {
+        text-align: center;
+        background-color: thistle;
+    }
+    .ssz {
+        color:rgb(72, 21, 114);
+        background-color: rgb(88, 202, 185);
+        box-shadow: inset 1px 1px 6px black;
+        width: 70px;
     }
 </style>
