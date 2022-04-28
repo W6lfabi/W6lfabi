@@ -4,11 +4,11 @@ td {
     width: 150px;
     height: 50;
     text-align: center;
-    border: dotted 3px;
+    border: solid 3px rgb(13, 21, 47);
     border-radius: 8px;
     box-shadow: 1px 1px 3px black;
     background-color: azure;
-    color: darkcyan;
+    color: rgb(66, 22, 17);
     cursor: pointer;
 }
 td:hover {
@@ -27,7 +27,7 @@ table {
 h1 {
     text-align: center;
     text-shadow: 1px 1px 3px;
-    color: rgb(38, 80, 80);
+    color: rgb(14, 52, 52);
     user-select: none;
 }
 body {
