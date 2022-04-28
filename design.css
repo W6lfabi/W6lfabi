@@ -1,0 +1,35 @@
+td { 
+    text-shadow: 1px 1px 3px;
+    font-size: 30px;
+    width: 150px;
+    height: 50;
+    text-align: center;
+    border: solid 3px rgb(13, 21, 47);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px black;
+    background-color: azure;
+    color: rgb(163, 68, 57);
+    cursor: pointer;
+}
+td:hover {
+    background-color: bisque;
+}
+table {
+    border-spacing: 8px;
+    margin:auto ; 
+    background-color: rgb(38, 13, 75);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px inset;
+    border: solid 3px rgb(145, 49, 49);
+    user-select: none;
+}
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 3px;
+    color: rgb(14, 52, 52);
+    user-select: none;
+}
+body {
+    background-color: antiquewhite;
+}
