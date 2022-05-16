@@ -1,35 +1,22 @@
-td { 
-    text-shadow: 1px 1px 3px;
-    font-size: 30px;
-    width: 150px;
-    height: 50;
+div.c {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color: rgb(172, 238, 170);
+}
+div {
     text-align: center;
-    border: solid 3px rgb(13, 21, 47);
-    border-radius: 8px;
-    box-shadow: 1px 1px 3px black;
-    background-color: azure;
-    color: rgb(66, 22, 17);
-    cursor: pointer;
-}
-td:hover {
-    background-color: bisque;
-}
-table {
-    border-spacing: 8px;
-    margin:auto ; 
-    background-color: aquamarine;
-    padding: 10px;
+    margin: 10px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 3px inset;
-    border: solid 3px rgb(145, 49, 49);
-    user-select: none;
+    box-shadow: 1px 1px 4px black inset;
 }
-h1 {
-    text-align: center;
-    text-shadow: 1px 1px 3px;
-    color: rgb(14, 52, 52);
-    user-select: none;
-}
-body {
-    background-color: antiquewhite;
+div.c div {
+    width: 90px;
+    background-color: rgb(68, 43, 211);
+    font-family: tahoma;
+    font-size: x-large;
+    text-shadow: 1px 1px 3px rgb(199, 152, 22);
+    color: orange;
 }
