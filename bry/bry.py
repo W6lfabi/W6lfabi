@@ -1,12 +1,9 @@
 from browser import document as D, html as H, ajax
+from random import randrange as R 
 D <= H.H1("Brython alap")
-def f(x):
-    l = x.text.split("\n")
-    for r in l:
-        u = r.split(";")
-        D <= H.SPAN(u[1]) + ": " + H.SPAN(u[0]) + H.HR()
-def g(e):
-    D <= H.DIV(e.target.value)
-    e.target.value = ""
-D <= H.INPUT().bind("change", g) + H.HR()
-ajax.get("teszt.txt", oncomplete = f)
+l  = list({R(1,10000) for i in range(200)})
+l  . sort()
+def f(e):
+    e.target.innerHTML = ""
+    e.target.style.backgroundColor = "red"
+D <= H.DIV([H.DIV(i).bind("click", f) for i in l],Class="c")

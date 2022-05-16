@@ -2,5 +2,20 @@ body {
     color: rgb(61, 21, 21);
     text-shadow: 1px 1px 3px black;
     text-align: center;
-    background-color: rgb(150, 219, 219);
+    background-color: rgb(216, 239, 239);
+}
+.c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.c div {
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+    margin: 7px;
+    background-color: aqua;
+    border-radius: 8px;
+    cursor: pointer;
 }
