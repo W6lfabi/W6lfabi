@@ -1,6 +1,10 @@
 from browser import document as D, html as H
 from random import shuffle, randrange as R
-s = [1,1,1,1,0,2,3,2,0,1,1,1,1]
+s = [0]
+n = 6
+for i in range(n):
+    j = R(1,5)
+    s = [j] + s + [j]
 def f(e):
     e.target.text = int(e.target.text) + 1
     e.target.style = {
@@ -10,7 +14,7 @@ def f(e):
 for i in range(12):
     l = list(range(1, 91))
     shuffle(l)
-    l = l[:13]
+    l = l[:2*n+1]
     l.sort()
     D <= [
         H.DIV(e, Class=f"c{s[i]}").bind("click", f)
