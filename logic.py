@@ -7,7 +7,7 @@ def f(e):
         "boxShadow": "1px 1px 6px black",
         "backgroundColor": f"rgb({R(0,256)},{R(0,256)},{R(0,256)})"
     }
-for i in range(6):
+for i in range(12):
     l = list(range(1, 91))
     shuffle(l)
     l = l[:9]

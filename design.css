@@ -1,20 +1,20 @@
 div {
     text-shadow: 1px 1px 3px black;
     text-align: center;
-    font-size: 60px;
+    font-size: 25px;
     font-family: Calibri;
     display: inline-block;
-    margin: 6px;
-    padding: 10px;
-    width: 70px;
+    margin: 2px;
+    padding: 2px;
+    width: 30px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 5px;
     user-select: none;
 }
 .c1 {
     color: rgb(234, 231, 79);
     box-shadow: 1px 1px 3px black;
-    background-color: rgb(54, 121, 121);
+    background-color: rgb(5, 121, 121);
 }
 .c2 {
     color: rgb(233, 135, 50);
