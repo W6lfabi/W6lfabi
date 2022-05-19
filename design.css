@@ -8,18 +8,22 @@ div {
     padding: 10px;
     width: 70px;
     cursor: pointer;
-}
-.c2 {
-    color: rgb(234, 231, 79);
-    box-shadow: 1px 1px 3px black;
-    border-radius: 5px;
-    background-color: rgb(54, 121, 121);
+    border-radius: 15px;
+    user-select: none;
 }
 .c1 {
+    color: rgb(234, 231, 79);
+    box-shadow: 1px 1px 3px black;
+    background-color: rgb(54, 121, 121);
+}
+.c2 {
     color: rgb(233, 135, 50);
 }
-.c0 {
+.c3 {
     color: rgb(50, 233, 227);
+}
+.c0 {
+    color: rgb(77, 109, 108);
 }
 body {
     background-color: rgb(165, 211, 211);
