@@ -1,0 +1,17 @@
+body {
+    background-color: azure;
+    text-shadow: 1px 1px 4px gray;
+    text-align: center;   
+}
+input#er {
+    background-color: rgb(182, 226, 226);
+
+}
+input {
+    text-align: right;
+    width: 80px;
+    font-size: 40px;
+}
+button {
+    font-size: 40px;
+}
