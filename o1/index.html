@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Excel</title>
 </head>
 <body>
     <h1>
@@ -17,7 +16,7 @@
             <td><input row="1" col="3" type="text" onchange="f()"></td>
             <td><input row="1" col="4" type="text" onchange="f()"></td>
             <td><input row="1" col="5" type="text" onchange="f()"></td>
-            <td id="r1" class="ro"></td>
+            <td id="r1" class="ro">0</td>
         </tr>
         <tr>
             <td><input row="2" col="1" type="text" onchange="f()"></td>
@@ -25,7 +24,7 @@
             <td><input row="2" col="3" type="text" onchange="f()"></td>
             <td><input row="2" col="4" type="text" onchange="f()"></td>
             <td><input row="2" col="5" type="text" onchange="f()"></td>
-            <td id="r2" class="ro"></td>
+            <td id="r2" class="ro">0</td>
         </tr>
         <tr>
             <td><input row="3" col="1" type="text" onchange="f()"></td>
@@ -33,12 +32,9 @@
             <td><input row="3" col="3" type="text" onchange="f()"></td>
             <td><input row="3" col="4" type="text" onchange="f()"></td>
             <td><input row="3" col="5" type="text" onchange="f()"></td>
-            <td id="r3" class="ro"></td>
+            <td id="r3" class="ro">0</td>
         </tr>
     </table>
-    <div id="e">
-
-    </div>
 </body>
 </html>
 <script>
@@ -47,7 +43,7 @@
         document.querySelectorAll("input")
                 .forEach(v => {
                     r = Number(v.getAttribute("row"))
-                    a[r-1] += Number(v.value)
+                    a[r-1] += (x = Number(v.value)) ? x : 0
                 })
         a.forEach((v, i) => {
             document.getElementById("r"+(i+1)).innerHTML = a[i]
@@ -56,11 +52,15 @@
 </script>
 <style>
     body {
+        font-family: Cochin;
+        color: rgb(93, 23, 23);
         background-color: aquamarine;
         text-align: center;
+        text-shadow: 1px 1px 3px rgb(80, 13, 13);
     }
     input {
-        width: 220px;
+        font-family: Cochin;
+        width: 160px;
         font-size: 40px;
         box-shadow: 1px 1px 4px black;
         border-radius: 8px;
@@ -71,12 +71,14 @@
         padding: 5px;
         color: rgb(81, 9, 9);
         text-shadow: 1px 1px 4px gray;
+        color: rgb(93, 23, 23);
     }
     table {
         margin: auto;
     }
     .ro {
-        font-size: 60px;
-        color: rgb(8, 52, 58);
+        font-size: 50px;
+        color: rgb(16, 87, 97);
+        text-shadow: 1px 1px 3px rgb(13, 54, 80);
     }
 </style>
