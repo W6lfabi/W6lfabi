@@ -83,7 +83,7 @@
 <script>
     function f(p) {
         kijelzo = document.getElementById('e')
-        if (kijelzo.innerHTML == "0") {
+        if (kijelzo.innerHTML == "0" || kijelzo.innerHTML == "E") {
             kijelzo.innerHTML=p
         } else {
             kijelzo.innerHTML+=p
@@ -91,7 +91,12 @@
     }
     function g(m) {
         kijelzo = document.getElementById('e')
-        l = eval(kijelzo.innerHTML)
+        try {
+            l = eval(kijelzo.innerHTML)
+        } catch(e) {
+            l = "E"
+        }
+        
         kijelzo.innerHTML = l
     }   
 </script>
