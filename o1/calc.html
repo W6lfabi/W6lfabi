@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Számológép</h1>
+    <table>
+        <tr>
+            <td colspan="4" id="e">0</td>
+        </tr>
+        <tr>
+            <td onclick="document.getElementById('e').innerHTML='0'">c</td>
+            <td onclick="f('(')">(</td>
+            <td onclick="f(')')">)</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td onclick="f(7)">7</td>
+            <td onclick="f(8)">8</td>
+            <td onclick="f(9)">9</td>
+            <td onclick="f('*')">*</td>
+        </tr>
+        <tr>
+            <td onclick="f(4)">4</td>
+            <td onclick="f(5)">5</td>
+            <td onclick="f(6)">6</td jaa>
+            <td onclick="f('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="f(1)">1</td>
+            <td onclick="f(2)">2</td>
+            <td onclick="f(3)">3</td>
+            <td onclick="f('+')">+</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td onclick="f(0)">0</td> 
+            <td onclick="f('.')">,</td>
+            <td onclick="g()">=</td>
+        </tr>
+    </table>
+
+</body>
+<style>
+    td {
+        color: rgb(43, 67, 226);
+        background-color: aqua;
+        height: 60px;
+        width: 80px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 30px;
+        text-shadow: 1px 1px 4px gray;
+        box-shadow: 1px 1px 3px black;
+        border-radius: 5px;
+        user-select: none;
+    }
+    td:hover {
+        background-color: aquamarine;
+    }
+    td:active {
+        background-color: bisque;
+    }
+    table {
+        margin: auto;
+        border-spacing: 9px;
+    }
+    h1 {
+        text-align: center;
+        text-shadow: 1px 1px 4px gray;
+    }
+    #e {
+        background-color: rgb(230, 165, 86);
+        text-align: right;
+        padding-right:20px;
+        padding-left:20px;
+    }
+</style>
+<script>
+    function f(p) {
+        kijelzo = document.getElementById('e')
+        if (kijelzo.innerHTML == "0") {
+            kijelzo.innerHTML=p
+        } else {
+            kijelzo.innerHTML+=p
+        }
+    }
+    function g(m) {
+        kijelzo = document.getElementById('e')
+        l = eval(kijelzo.innerHTML)
+        kijelzo.innerHTML = l
+    }   
+</script>
+</html>
