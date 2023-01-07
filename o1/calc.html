@@ -89,6 +89,8 @@
         } else {
             kijelzo.innerHTML+=p
         }
+        if  (kijelzo.innerHTML[0] == ".") 
+            kijelzo.innerHTML = "0"+ kijelzo.innerHTML
     }
     function g(m) {
         kijelzo = document.getElementById('e')
