@@ -37,7 +37,7 @@
             <td onclick="f('+')">+</td>
         </tr>
         <tr>
-            <td></td>
+            <td onclick="f('gyök(')">√</td>
             <td onclick="f(0)">0</td> 
             <td onclick="f('.')">,</td>
             <td onclick="g()">=</td>
@@ -81,6 +81,7 @@
     }
 </style>
 <script>
+    gyök = Math.sqrt
     function f(p) {
         kijelzo = document.getElementById('e')
         if (kijelzo.innerHTML == "0" || kijelzo.innerHTML == "E") {
