@@ -103,7 +103,7 @@
     function g(m) {
         kijelzo = document.getElementById('e')
         try {
-            l = eval(kijelzo.innerHTML)
+            l = Number(eval(kijelzo.innerHTML).toFixed(10))
         } catch(e) {
             l = "E"
         }
