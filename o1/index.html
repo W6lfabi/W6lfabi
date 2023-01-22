@@ -34,6 +34,13 @@
             <td><input row="3" col="5" type="text" onchange="f()"></td>
             <td id="r3" class="ro">0</td>
         </tr>
+        <tr>
+            <td id="c1" class="ro">0</td>
+            <td id="c2" class="ro">0</td>
+            <td id="c3" class="ro">0</td>
+            <td id="c4" class="ro">0</td>
+            <td id="c5" class="ro">0</td>
+        </tr>
     </table>
 </body>
 </html>
@@ -48,15 +55,27 @@
         a.forEach((v, i) => {
             document.getElementById("r"+(i+1)).innerHTML = a[i]
         })
+
+
+        b = Array(5).fill(0)
+        document.querySelectorAll("input")
+                .forEach(v => {
+                    c = Number(v.getAttribute("col"))
+                    b[c-1] += (x = Number(v.value)) ? x : 0
+                })
+        a.forEach((v, i) => {
+            document.getElementById("c"+(i+1)).innerHTML = b[i]
+        })
+    
     }
 </script>
 <style>
     body {
         font-family: Cochin;
-        color: rgb(93, 23, 23);
-        background-color: aquamarine;
+        color: rgb(8, 31, 161);
+        background-color: rgb(59, 191, 147);
         text-align: center;
-        text-shadow: 1px 1px 3px rgb(80, 13, 13);
+        text-shadow: 1px 1px 3px rgb(182, 35, 120);
     }
     input {
         font-family: Cochin;
@@ -69,7 +88,7 @@
         text-align: center;
         margin: 5px;
         padding: 5px;
-        color: rgb(81, 9, 9);
+        color: rgb(217, 54, 54);
         text-shadow: 1px 1px 4px gray;
         color: rgb(93, 23, 23);
     }
@@ -78,7 +97,7 @@
     }
     .ro {
         font-size: 33px;
-        color: rgb(16, 87, 97);
-        text-shadow: 1px 1px 3px rgb(13, 54, 80);
+        color: rgb(25, 58, 189);
+        text-shadow: 1px 1px 3px rgb(142, 41, 182);
     }
 </style>
