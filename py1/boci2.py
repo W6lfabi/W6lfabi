@@ -41,20 +41,23 @@ def boci1(sz):
     down()
     forward(m/8)
     up()
-    setpos(0,m)
+
+    setpos(0,m) # Balfül
     setheading(195)
     down()
     forward(m/5)
     left(90)
     forward(m/5)
     up()
-    setpos(sz/2,m)
+
+    setpos(sz/2,m)  # Jobbfül
     setheading(-15)
-    down()
+    down()   
     forward(m/5)
     right(90)
     forward(m/5)
     up()
+
     setpos(sz/10,0)
     setheading(0)
     down()
@@ -70,6 +73,7 @@ def boci1(sz):
     teglalap(sz/10,m/4)
     teglalap(sz/10,21*m/100)
     up()
+
     setpos(sz,m/2)
     setheading(15)
     down()
@@ -107,6 +111,9 @@ def kor(x,y,r):
     
     
 boci1(500)
+color("blue")
 kor(200,110,50)
+color("brown")
 kor(400, 250, 50)
+hideturtle()
 exitonclick()
