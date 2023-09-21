@@ -24,6 +24,6 @@ if c != 10:
         end="",
     )
     for i in l:
-        print(o // i, end="")
+        print(szj[o // i], end="")
         o = o % i
     print("\u001b[0m")
