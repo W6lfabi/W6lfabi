@@ -5,7 +5,7 @@ kj[10], kj[40] = "es", "es"
 szj = [chr(ord("0") + i) for i in range(10)] + [chr(i) for i in range(65, 91)]
 szjo = {j: i for i, j in enumerate(szj)}
 n = input(f"Átváltandó szám (csak a 0-{szj[f-1]} számjegyek): ")
-ns = [i for i in n]
+ns = list(n)
 ns.reverse()
 o, l, k = 0, [1], 1
 for i, j in enumerate(ns):
