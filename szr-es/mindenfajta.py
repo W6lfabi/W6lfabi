@@ -13,14 +13,14 @@ for i, j in enumerate(ns):
 print(
     f"A{'z' if ns[-1] in '15AEFILMNORSUXY' else ''} „{n}” ({f}-{kj[f]} számrendszerbeli) szám"
 )
-print(f"\t- tízes számrendszerbeli alakja: \N{ESC}[38;2;{255};{155};{200}m{o}\u001b[0m")
+print(f"\t- tízes számrendszerbeli alakja: \N{ESC}[38;2;255;155;200m{o}\u001b[0m")
 if c != 10:
     while k <= o:
         k *= c
         l.append(k)
     l.pop(), l.reverse()
     print(
-        f"\t- {c:2d}-{kj[c]} számrendszerbeli alakja: \N{ESC}[38;2;{255};{255};{100}m",
+        f"\t- {c:2d}-{kj[c]} számrendszerbeli alakja: \N{ESC}[38;2;255;255;100m",
         end="",
     )
     for i in l:
