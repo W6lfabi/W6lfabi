@@ -1,7 +1,7 @@
 f = int(input("Forrás számrendszer (2 - 36): "))
 c = int(input("Cél számrendszer (2 - 36): "))
 kj = ["as", "es", "es", "as", "es", "ös", "os", "es", "as", "es"] * 5
-kj[10], kj[40] = "es", "es"
+kj[10] = "es"
 szj = [chr(ord("0") + i) for i in range(10)] + [chr(i) for i in range(65, 91)]
 szjo = {j: i for i, j in enumerate(szj)}
 n = input(f"Átváltandó szám (csak a 0-{szj[f-1]} számjegyek): ")
