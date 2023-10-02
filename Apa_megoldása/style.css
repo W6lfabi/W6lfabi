@@ -1,0 +1,53 @@
+body {
+    background-image: url('tengerpart.jpg');
+    font-family:'Franklin Gothic Medium'
+}
+table.main {
+    border-spacing: 0px;
+    border: solid 2px #284555;
+    margin: 0px auto;
+    width: 1100px;
+    box-shadow: 1px 1px 4px black;
+}
+td.left, td.right {
+    padding: 10px;
+}
+td.left {
+    background-color: #e8f7fe8d;
+    width: 400px;
+}
+td.right {
+    background-color: #e8f7fe;
+    width: 400px;
+}
+h1#ft {
+    color:#284555
+}
+img#img {
+    margin: auto;
+}
+div.png {
+    text-align: center;
+}
+p.wikilink {
+    font-style: italic;
+    text-align: center;
+}
+p.ft1 {
+    text-align: justify;
+}
+h2 {
+    text-align: center;
+    color: #388ec0;
+}
+table.adatlap {
+    width: 100%;
+    border-spacing: 0px;
+    border: solid 1px blue;
+}
+table.adatlap td, table.adatlap th {
+    border: solid 0.5px blue;
+    background-color: #388ec0;
+    text-align: left;
+    padding-left: 5px;
+}
