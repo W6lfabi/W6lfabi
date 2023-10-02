@@ -1,6 +1,7 @@
 body {
     background-image: url('tengerpart.jpg');
-    font-family:'Arial'
+    font-family:'Arial';
+    margin-top: 50px;
 }
 table.main {
     border-spacing: 0px;
@@ -21,6 +22,7 @@ td.right {
     width: 400px;
 }
 h1#ft {
+    margin: 0px;
     color:#284555
 }
 img#img {
