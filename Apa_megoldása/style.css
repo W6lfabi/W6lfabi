@@ -1,6 +1,6 @@
 body {
     background-image: url('tengerpart.jpg');
-    font-family:'Franklin Gothic Medium'
+    font-family:'Arial'
 }
 table.main {
     border-spacing: 0px;
@@ -43,11 +43,12 @@ h2 {
 table.adatlap {
     width: 100%;
     border-spacing: 0px;
-    border: solid 1px blue;
+    border: solid 1px #388ec0;
 }
 table.adatlap td, table.adatlap th {
-    border: solid 0.5px blue;
-    background-color: #388ec0;
+    border: solid 0.5px #388ec0;
+    background-color: #c3e4f8;
     text-align: left;
+    padding: 3px;
     padding-left: 5px;
 }
