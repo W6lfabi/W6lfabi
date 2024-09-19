@@ -1,12 +1,13 @@
 
 var t = []
 window.onload = f = () => {
+    m = window.innerWidth > 1000 ? 20 : 7
     nyert = "-"
-    t = Array(15).fill(0).map(() => Array(20).fill(0))
+    t = Array(10).fill(0).map(() => Array(m).fill(0))
     let t1 = document.getElementById("t1")
     t1.innerHTML = `<table id="table">${
-        t   .map((_, i) =>`<tr>
-                ${t .map((_, j) =>
+        t   .map((v, i) =>`<tr>
+                ${v .map((_, j) =>
                         `<td onclick="katt(${i},${j})" id="${i}-${j}"></td>`)
                     .join("")}</tr>`)
             .join("")
