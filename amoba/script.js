@@ -22,9 +22,9 @@ katt = (i, j) => {
         t[i][j] = next;
         [[1, 1], [1, 0], [1, -1], [0, 1]].forEach(([a, b]) => {
             [x, y, k] = [i, j, 0]
-            while (t[x][y] == next) k++, x += a, y += b;
+            while (t[x] && t[x][y] == next) k++, x += a, y += b;
             [x, y] = [i, j]
-            while (t[x][y] == next) k++, x -= a, y -= b
+            while (t[x] && t[x][y] == next) k++, x -= a, y -= b
             if (k >= 6) nyert = next
         })
         next = next == "O" ? "X" : "O";
