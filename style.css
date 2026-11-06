@@ -1,0 +1,28 @@
+
+body {
+    background-image: url("címkép.png");
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Inter', sans-serif;
+}
+h1 {
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    position: fixed;
+    left: 20%;
+    top: 35%;
+    display: inline-block;
+    border: none;
+    color: whitesmoke;
+    background: radial-gradient(
+        ellipse,
+        rgba(98, 12, 12, 0.9) 0%,
+        rgba(98, 12, 12, 0.5) 50%,
+        rgba(98, 12, 12, 0) 100%);
+    padding: 10px;
+}
